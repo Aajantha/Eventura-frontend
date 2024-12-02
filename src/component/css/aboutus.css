@@ -1,0 +1,19 @@
+.about-us-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    color: #333; /* Dark text color */
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
+    color: #800000; /* Maroon color for headings */
+  }
+  
+  ul {
+    list-style-type: none; /* Remove default list styling */
+  }
+  
+  ul li {
+    margin: 10px 0; /* Spacing between items */
+  }
+  

@@ -1,0 +1,86 @@
+/* styles.css
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: maroon; /* Change this to your desired color */
+  
+/* Base Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8B1F41; /* Main background color */
+  padding: 10px 20px; /* Spacing around navbar */
+}
+
+.logo {
+  height: 50px; /* Adjust logo height as needed */
+}
+
+/* Navbar Menu */
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Space between menu items */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  display: inline;
+}
+
+.navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.navbar-menu a:hover {
+  color: #f0c040; /* Hover color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    width: 100%; /* Full width for mobile menu */
+    display: none; /* Initially hide menu */
+  }
+
+  .navbar-menu.active {
+    display: flex; /* Show menu when active */
+  }
+
+  .navbar-menu li {
+    padding: 10px 0; /* Space out items for mobile */
+    text-align: center;
+  }
+
+  .navbar-toggler {
+    display: block; /* Show hamburger icon */
+    background-color: #8B1F41;
+    color: white;
+    border: none;
+    font-size: 24px; /* Size for hamburger icon */
+    cursor: pointer;
+  }
+}
+
+/* Navbar Brand */
+.navbar-brand .logo {
+  height: 50px; /* Adjust logo height */
+}
+
+/* Additional Hover Effects */
+.navbar-menu a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  color: #f0c040; /* Hover effect color */
+}

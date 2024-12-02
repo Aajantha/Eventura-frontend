@@ -1,0 +1,24 @@
+body {
+    background: linear-gradient(to right, #ffe4e1, #ffb6c1);
+  }
+  
+  .text-pink-500 {
+    color: #e91e63;
+  }
+  
+  .bg-pink-500 {
+    background-color: #e91e63;
+  }
+  
+  .text-pink-600 {
+    color: #d81b60;
+  }
+  
+  .bg-gradient-to-r {
+    background: linear-gradient(90deg, #ff7eb3 0%, #ff758c 100%);
+  }
+  
+  .hover\\:shadow-xl:hover {
+    box-shadow: 0 10px 25px rgba(233, 30, 99, 0.4);
+  }
+  
