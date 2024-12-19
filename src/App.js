@@ -15,6 +15,7 @@ import Cart from './component/Cart.js'; // Import Cart component
 import './component/css/dashboard.css'; // Import CSS
 import { CartProvider } from './component/Cartcontext.js';
 import Payment from './component/Payment.js'; // Import Cart component
+import Footer from './component/Footer.js';
 
 // PrivateRoute component for role-based routing
 const PrivateRoute = ({ element, allowedRole }) => {
@@ -27,7 +28,7 @@ const App = () => (
   <Router>
     <CartProvider>
       <NavBar />
-      
+     
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutUs" element={<AboutUs />} />
@@ -49,7 +50,7 @@ const App = () => (
         {/* Cart route */}
         <Route path="/cart" element={<Cart />} />
       </Routes>
-      
+      <Footer/>
     </CartProvider>
   </Router>
   

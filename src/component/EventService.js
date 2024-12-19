@@ -901,7 +901,7 @@ const EventService = () => {
                 alert("Service added to cart!");
               }}
               variant="outline-danger"
-              style={{ backgroundColor: "#921A40", borderColor: "#921A40" }}
+              style={{ backgroundColor: "#921A40", borderColor: "black" ,color: "white"}}
             >
               Add to Cart
             </Button>
@@ -934,7 +934,7 @@ const EventService = () => {
           <Button
             onClick={() => setShowModal(true)}
             variant="danger"
-            style={{ backgroundColor: "#921A40", borderColor: "#921A40" }}
+            style={{backgroundColor: "#921A40", borderColor: "black" ,color: "white"}}
             disabled={cart.length === 0}
           >
             Proceed to Payment

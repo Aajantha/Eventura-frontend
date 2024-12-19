@@ -73,7 +73,7 @@ export default function HomePage() {
       className="d-block w-100"
       src="/168d5c0a-a585-4916-9e2e-776071bcccaa.jpeg"
       alt="Elegant Weddings"
-      style={{ objectFit: 'cover', height: '600px' }}
+      style={{ objectFit: 'cover', height: '600px', color: 'black' }}
     />
     <Carousel.Caption>
       <h3>Elegant Weddings</h3>
@@ -86,7 +86,7 @@ export default function HomePage() {
       className="d-block w-100"
       src="/A14_Wedding Hall Interior.jpeg"
       alt="Corporate Events"
-      style={{ objectFit: 'cover', height: '600px' }}
+      style={{ objectFit: 'cover', height: '600px', }}
     />
     <Carousel.Caption>
       <h3>Corporate Events</h3>
@@ -226,65 +226,9 @@ export default function HomePage() {
           </Container>
         </section>
 
-        <section id="contact" style={{ padding: '6rem 0', backgroundColor: '#FFF0F5' }}>
-          <Container>
-            <h2 style={{ textAlign: 'center', marginBottom: '4rem', color: '#921A40', fontSize: '3rem', fontFamily: 'Playfair Display, serif' }}>Start Planning Your Dream Event</h2>
-            <Row className="justify-content-center">
-              <Col md={8}>
-                <Card style={{ borderRadius: '15px', overflow: 'hidden', boxShadow: '0 15px 30px rgba(0,0,0,0.1)', border: 'none' }}>
-                  <Card.Body style={{ padding: '3rem' }}>
-                    <Form onSubmit={handleSubmit}>
-                      <Form.Group className="mb-4">
-                        <Form.Control type="text" name="name" placeholder="Your Name" onChange={handleChange} value={formData.name} style={{ borderRadius: '50px', padding: '0.75rem 1.5rem', fontSize: '1.1rem' }} />
-                      </Form.Group>
-                      <Form.Group className="mb-4">
-                        <Form.Control type="email" name="email" placeholder="Your Email" onChange={handleChange} value={formData.email} style={{ borderRadius: '50px', padding: '0.75rem 1.5rem', fontSize: '1.1rem' }} />
-                      </Form.Group>
-                      <Form.Group className="mb-4">
-                        <Form.Control type="text" name="address" placeholder="Event Location" onChange={handleChange} value={formData.address} style={{ borderRadius: '50px', padding: '0.75rem 1.5rem', fontSize: '1.1rem' }} />
-                      </Form.Group>
-                      <Form.Group className="mb-4">
-                        <Form.Control type="date" name="eventDate" onChange={handleChange} value={formData.eventDate} style={{ borderRadius: '50px', padding: '0.75rem 1.5rem', fontSize: '1.1rem' }} />
-                      </Form.Group>
-                      <Form.Group className="mb-4">
-                        <Form.Select name="event" onChange={handleChange} value={formData.event} style={{ borderRadius: '50px', padding: '0.75rem 1.5rem', fontSize: '1.1rem' }}>
-                          <option value="">Select an Event Type</option>
-                          {events.map((event, index) => (
-                            <option key={index} value={event.name}>{event.name}</option>
-                          ))}
-                        </Form.Select>
-                      </Form.Group>
-                      <Form.Group className="mb-4">
-                        <Form.Control as="textarea" name="comments" placeholder="Tell us about your dream event" onChange={handleChange} value={formData.comments} rows="4" style={{ borderRadius: '15px', padding: '0.75rem 1.5rem', fontSize: '1.1rem' }} />
-                      </Form.Group>
-                      <div className="d-grid">
-                        <Button type="submit" style={{ 
-                          backgroundColor: '#921A40', 
-                          border: 'none', 
-                          padding: '1rem', 
-                          borderRadius: '50px', 
-                          fontSize: '1.2rem',
-                          fontWeight: 'bold',
-                          transition: 'all 0.3s',
-                          boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
-                        }}>
-                          Start Your Journey
-                        </Button>
-                      </div>
-                    </Form>
-                  </Card.Body>
-                </Card>
-              </Col>
-            </Row>
-          </Container>
-        </section>
       </main>
 
-      <footer style={{ backgroundColor: '#921A40', color: 'white', padding: '2rem 0', textAlign: 'center' }}>
-        <Container>
-          <p style={{ margin: 0, fontSize: '1.1rem', fontFamily: 'Merriweather, serif' }}>© 2024 Eventura. Crafting unforgettable moments, one event at a time.</p>
-        </Container>
-      </footer>
+    
     </div>
   );
 }

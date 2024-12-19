@@ -3,9 +3,9 @@ import { Home, Package, FileText, CreditCard, Sparkles } from "lucide-react";
 
 export default function AboutUs() {
   return (
-    <div className="min-vh-100 bg-light py-5 px-4">
-      <div className="container">
-        <h1 className="text-center mb-4 text-danger">
+    <div className="min-vh-100" style={{ backgroundColor: "#F4D9D0" }}> {/* Light Peach background */}
+      <div className="container py-5">
+        <h1 className="text-center mb-4" style={{ color: "#C75B7A" }}> {/* Maroon header */}
           About Our Magical Event Planner
         </h1>
 
@@ -16,7 +16,7 @@ export default function AboutUs() {
 
         <div className="row row-cols-1 row-cols-md-2 g-4">
           <div className="col">
-            <Card className="shadow-sm text-center h-100">
+            <Card className="shadow-sm text-center h-100" style={{ backgroundColor: "#D9ABAB" }}> {/* Peach-colored card */}
               <Card.Body>
                 <div className="bg-light rounded-circle d-flex align-items-center justify-content-center mb-3" style={{ width: "60px", height: "60px" }}>
                   <Home className="text-danger" size={30} />
@@ -30,9 +30,9 @@ export default function AboutUs() {
           </div>
 
           <div className="col">
-            <Card className="shadow-sm text-center h-100">
+            <Card className="shadow-sm text-center h-100" style={{ backgroundColor: "#D9ABAB" }}>
               <Card.Body>
-                <div className="bg-light rounded-circle d-flex align-items-center justify-content-center mb-3" style={{ width: "60px", height: "60px" }}>
+                <div className="bg-light rounded-circle d-flex align-items-center justify-content-center mb-3" style={{ width: "60px", height: "60px" ,Color: "#D9ABAB"}}>
                   <Package className="text-danger" size={30} />
                 </div>
                 <Card.Title className="text-danger">2. Choose Your Package</Card.Title>
@@ -44,7 +44,7 @@ export default function AboutUs() {
           </div>
 
           <div className="col">
-            <Card className="shadow-sm text-center h-100">
+            <Card className="shadow-sm text-center h-100" style={{ backgroundColor: "#D9ABAB" }}>
               <Card.Body>
                 <div className="bg-light rounded-circle d-flex align-items-center justify-content-center mb-3" style={{ width: "60px", height: "60px" }}>
                   <FileText className="text-danger" size={30} />
@@ -58,7 +58,7 @@ export default function AboutUs() {
           </div>
 
           <div className="col">
-            <Card className="shadow-sm text-center h-100">
+            <Card className="shadow-sm text-center h-100" style={{ backgroundColor: "#D9ABAB" }}>
               <Card.Body>
                 <div className="bg-light rounded-circle d-flex align-items-center justify-content-center mb-3" style={{ width: "60px", height: "60px" }}>
                   <CreditCard className="text-danger" size={30} />
@@ -70,16 +70,6 @@ export default function AboutUs() {
               </Card.Body>
             </Card>
           </div>
-        </div>
-
-        <div className="text-center mt-5">
-          <p className="text-secondary fs-4 mb-3">
-            Ready to create event magic?
-          </p>
-          {/* Remove the Link component */}
-          <Button variant="danger" className="fs-5 px-4 py-2">
-            Get Started Now <Sparkles className="ms-2" size={20} />
-          </Button>
         </div>
       </div>
     </div>

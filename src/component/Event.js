@@ -665,20 +665,17 @@
 //     </div>
 //   );
 // }
-
-
-
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';  // Correct import
+import { ToastContainer, toast } from 'react-toastify'; // Ensure correct import
 import { Calendar, Gift, Heart, Cake, Music, Utensils, Glasses, Users } from 'lucide-react';
 import 'react-toastify/dist/ReactToastify.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Import multiple images
 import weddingImage from '/home/uki/Downloads/event aaa/event aa/event/frontend/src/image/wed.jpg';
-import birthdayImage from '/home/uki/Downloads/event aaa/event aa/event/frontend/src/image/birth.jpg';
+import newBirthdayImage from '/home/uki/Downloads/event aaa/event aa/event/frontend/src/image/ffba6a0882b3480ac08a818f42c1dc00.jpg'; // New birthday image
 import anniversaryImage from '/home/uki/Downloads/event aaa/event aa/event/frontend/src/image/anuversery.jpg';
 import ceremonyImage from '/home/uki/Downloads/event aaa/event aa/event/frontend/src/image/cermony.jpg';
 
@@ -705,7 +702,7 @@ export default function EventPage() {
 
   const handleEventClick = (eventName) => {
     toast.success(`You've selected: ${eventName}`, {
-      position: toast.POSITION.TOP_CENTER,  // Correct toast position
+      position: toast.POSITION.TOP_CENTER,  // Ensure this is working correctly
     });
   };
 
@@ -744,7 +741,7 @@ export default function EventPage() {
       case 'wedding':
         return weddingImage;
       case 'birthday party':
-        return birthdayImage;
+        return newBirthdayImage; // Use the new birthday image here
       case 'anniversary':
         return anniversaryImage;
       case 'ceremony':
